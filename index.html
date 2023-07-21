@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Wine Quality Analysis</title>
+<link rel="icon" type="image/x-icon" href="./favicon/favicon.ico">
+ <link rel="stylesheet" href="./style.css">
+ <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+ <header>
+  <video id="background-video" autoplay loop muted poster="">
+   <source src="./pexels-jose-ignacio-1003928-1920x1080-25fps.mp4" type="video/mp4">
+  </video>
+  <div class="tittle">
+   <h1>The Wine</h1>
+   <h1>Quality Analysis.</h1>
+  </div>
+ </header>
+ <section>
+  <div class="msg">
+     <img class="img" src="./wine-bottle.png" alt="wine">
+     <p>Wine quality depends on the vinification process and the geographical origin of the grapes but also highly relies on the varietal composition of the grape must; The  quality of wine varies from <span>3</span> to <span>8</span>
+      ,The quality of a wine is determined by 11 input variables:
+      <span>Fixed acidity</span>,
+      <span>Volatile acidity</span>,
+      <span>Citric acid</span>,
+      <span>Residual sugar</span>,
+      <span>Chlorides</span>,
+      <span>Free sulfur dioxide</span>,
+      <span>Total sulfur dioxide</span>,
+      <span>Density</span>,
+      <span>pH</span>,
+      <span>Sulfates</span> and
+      <span>Alcohol .</span>
+     </p>
+  </div>
+ </section>
+ <section class="m">
+  <h2>Enter the values and Find Quality of Wine</h2>
+  <div class="m-v">
+  <article>
+   <div class="values">
+    <br>
+     <div class="items">
+      <h4>fixed acidity : </h4>
+      <input type="number" id="f-a" value="7.8">
+     </div>
+     <div class="items">
+      <h4>volatile acidity : </h4>
+      <input type="number" id="v-a" value="0.58">
+     </div>
+     <div class="items">
+      <h4>citric acid : </h4>
+      <input type="number" id="c-a"value="0.02">
+     </div>
+     <div class="items">
+      <h4>residual sugar : </h4>
+      <input type="number" id="r-s"value="2">
+     </div>
+     <div class="items">
+      <h4>chlorides : </h4>
+      <input type="number" id="ch"value="0.073">
+     </div>
+     <div class="items">
+      <h4>free sulfur dioxide : </h4>
+      <input type="number" id="f-s-d"value="9">
+     </div>
+     <div class="items">
+      <h4>total sulfur dioxide : </h4>
+      <input type="number" id="t-s-d" value="18">
+     </div>
+     <div class="items">
+      <h4>density : </h4>
+      <input type="number" id="d" value="0.9968">
+     </div>
+     <div class="items">
+      <h4>pH : </h4>
+      <input type="number" id="ph"value="3.36">
+     </div>
+     <div class="items">
+      <h4>sulphates : </h4>
+      <input type="number" id="sul"value="0.57">
+     </div>
+     <div class="items">
+      <h4>alcohol : </h4>
+      <input type="number" id="al" value="9.5">
+     </div>
+     <br>
+     <p class="info"><span style="color: rgba(252, 15, 15, 0.749);">*</span>The values are sample values,change and check it out , your wine quality</p>
+     <br>
+     <button onclick="returnText()">submit</button>
+   </div>
+  </article>
+  <aside>
+   <div class="result">
+    <div class="values">
+      <h1>Your result</h1>
+      <div id="myDIV">
+        <img class="img2" src="./wine.png" alt="">
+        <h1><span id="ans"></span> </h1>
+      </div>
+    </div>
+   </div>
+  </aside>
+  </div>
+ </section>
+<footer>
+  <div class="cr">
+    <h1><span>&copy; 2023</span>. All rights reserved by
+      <a href="https://api.whatsapp.com/send/?phone=919361207725&text&app_absent=0"><span>Bijjam Rakesh Reddy</span></a></span>.
+    </h1>
+  </div>
+</footer>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
